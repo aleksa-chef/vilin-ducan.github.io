@@ -1,0 +1,165 @@
+.main-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    .logo {
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-left: 40px;
+
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $linkPurple;
+                    font-weight: 700;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: $mainPurple;
+                    }
+                }
+
+                .active {
+                    color: $mainPurple;
+                }
+            }
+        }
+    }
+
+    .btn-holder {
+        cursor: pointer;
+        display: none;
+
+        span {
+            display: block;
+            background-color: $mainPurple;
+            height: 5px;
+            width: 50px;
+            margin-bottom: 10px;
+            border-radius: 100px;
+        }
+
+        .span-holder {
+            display: flex;
+            justify-content: flex-end;
+
+            span {
+                display: block;
+                background-color: $mainPurple;
+                height: 5px;
+                width: 25px;
+                border-radius: 100px;
+            }
+        }
+    }
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: $bodyColor;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:focus {
+            color: #460073;
+        }
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+
+        a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: $linkPurple;
+            display: block;
+            font-weight: 700;
+            transition: 0.2s;
+
+            &:hover {
+                color: $mainPurple;
+            }
+        }
+
+        .active {
+            color: $mainPurple;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 992px) {
+
+    .main-header {
+
+        .main-nav {
+
+            .nav-list {
+
+                li {
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .logo {
+
+            img {
+                width: 130px;
+            }
+        }
+
+        .btn-holder {
+            display: block;
+        }
+
+        .main-nav {
+            display: none;
+        }
+    }
+}

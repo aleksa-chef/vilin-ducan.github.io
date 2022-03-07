@@ -1,0 +1,94 @@
+.about-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    .text-section {
+        text-align: center;
+        width: 416px;
+        
+        h2 {
+            font-family: $dancingScript;
+            font-weight: 400;
+            font-size: 90px;
+            color: $mainPurple;
+            margin-bottom: 40px;
+        }
+
+        p {
+            color: #747474;
+            margin-bottom: 40px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $btnColor;
+            font-weight: 500;
+            font-size: 22px;
+            padding: 25px 33px;
+            border: 2px solid $btnColor;
+            background-color: transparent;
+            transition: 0.2s;
+
+            &:hover {
+                color: $bodyColor;
+                background-color: $btnColor;
+            }
+        }
+    }
+
+    .image-holder {
+        max-width: 440px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+
+    .about-section {
+
+        .text-section {
+
+            h2 {
+                font-size: 70px;
+            }
+        }
+
+        .image-holder {
+            max-width: 306px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about-section {
+
+        .text-section {
+            width: 100%;
+        }
+
+        .image-holder {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .text-section {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+}

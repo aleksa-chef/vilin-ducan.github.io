@@ -1,0 +1,23 @@
+.back-to-top {
+    text-decoration: none;
+    padding: 22px 18px;
+    background-color: #dcdcdc;
+    position: fixed;
+    bottom: 16px;
+    right: 30px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25), 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+
+    img {
+        width: 30px;
+    }
+}
+
+.back-to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
